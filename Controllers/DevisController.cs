@@ -48,7 +48,7 @@ namespace GestionFacturation.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDevis(int id, Devis devis)
         {
-            if (id != devis.id)
+            if (id != devis.Id)
             {
                 return BadRequest();
             }
@@ -83,7 +83,7 @@ namespace GestionFacturation.Controllers
             _context.Deviss.Add(devis);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDevis", new { id = devis.id }, devis);
+            return CreatedAtAction("GetDevis", new { id = devis.Id }, devis);
         }
 
         // DELETE: api/Devis/5
@@ -104,7 +104,7 @@ namespace GestionFacturation.Controllers
 
         private bool DevisExists(int id)
         {
-            return _context.Deviss.Any(e => e.id == id);
+            return _context.Deviss.Any(e => e.Id == id);
         }
     }
 }

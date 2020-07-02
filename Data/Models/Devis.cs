@@ -20,14 +20,14 @@ namespace GestionFacturation.Data.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
+        public int Id { get; set; }
         public string NomClient { get; set; }
         public int ClientId { get; set; }
         public Article Articles { get; set; }
         [DataType(DataType.Date)]
         [Required]
         public DateTime DateLivaraison { get; set; }
-        public float prixTotal { get; set; }
+        public float PrixTotal { get; set; }
     }
 
     public class Article
