@@ -224,6 +224,9 @@ namespace GestionFacturation.Data.Migrations
                     b.Property<string>("Nom")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Password")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Prenom")
                         .HasColumnType("TEXT");
 

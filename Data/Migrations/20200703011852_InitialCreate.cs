@@ -116,7 +116,8 @@ namespace GestionFacturation.Data.Migrations
                     UserName = table.Column<string>(nullable: true),
                     Telephone = table.Column<string>(nullable: true),
                     Adresse = table.Column<string>(nullable: true),
-                    Type = table.Column<string>(nullable: true)
+                    Type = table.Column<string>(nullable: true),
+                    Password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

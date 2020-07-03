@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GestionFacturation.Data;
 using GestionFacturation.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GestionFacturation.Controllers
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
+    [Route("api/[controller]")]
     public class UtilisateursController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

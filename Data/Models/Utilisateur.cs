@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 
@@ -23,7 +24,9 @@ namespace GestionFacturation.Data.Models
         
         public string Adresse { get; set; }
         public string Type { get; set; }
-        
+        [JsonIgnore]
+        public string Password { get; set; }
+
 
 
 
