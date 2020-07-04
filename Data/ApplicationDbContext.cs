@@ -16,5 +16,8 @@ namespace GestionFacturation.Data
         {
             optionsBuilder.UseSqlite("Data Source=GestionFacturationDB.db");
         }
+
+
+        public DbSet<GestionFacturation.Data.Models.Categorie> Categorie { get; set; }
     }
 }
